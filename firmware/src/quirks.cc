@@ -21,8 +21,24 @@ const uint16_t VENDOR_ID_CH_PRODUCTS = 0x068e;
 const uint16_t PRODUCT_ID_CH_PRODUCTS_DT225 = 0xf700;
 
 const uint16_t VENDOR_ID_3DCONNEXION = 0x256f;
+const uint16_t VENDOR_ID_LOGITECH = 0x046d;
+const uint16_t PRODUCT_ID_3DCONNEXION_CADMAN = 0xc605;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACENAVIGATOR = 0xc626;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACENAVIGATOR_NOTEBOOK = 0xc628;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEEXPLORER = 0xc627;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEPILOT = 0xc625;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEPILOT_PRO = 0xc629;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACETRAVELLER = 0xc623;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEBALL_5000 = 0xc621;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_CLASSIC = 0xc606;
 const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_COMPACT = 0xc635;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_WIRELESS = 0xc62f;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_WIRELESS_CAB = 0xc62e;
 const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_PRO = 0xc62b;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_PRO_WIRELESS = 0xc632;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_PRO_WIRELESS_CAB = 0xc631;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_PLUS = 0xc603;
+const uint16_t PRODUCT_ID_3DCONNEXION_SPACEMOUSE_ENTERPRISE = 0xc633;
 
 const uint8_t elecom_huge_descriptor[] = {
     0x05, 0x01,        // Usage Page (Generic Desktop Ctrls)
@@ -750,7 +766,7 @@ void apply_quirks(uint16_t vendor_id, uint16_t product_id, std::unordered_map<ui
     }
 
     // Try to catch all other SpaceMouse models.
-    if (((vendor_id == VENDOR_ID_3DCONNEXION) || (vendor_id = 0x046d)) &&
+    if (((vendor_id == VENDOR_ID_3DCONNEXION) || (vendor_id = VENDOR_ID_LOGITECH)) &&
         usage_map.count(1) &&
         usage_map.count(2) &&
         usage_map[1].count(0x00010030) &&
