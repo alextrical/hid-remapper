@@ -10071,7 +10071,11 @@ const examples = [
         'description': 'SpacePilot to SpaceMouse Pro',
         'config': {
             "version": 15,
-            "unmapped_passthrough_layers": [],
+            "unmapped_passthrough_layers": [
+                0,
+                1,
+                2,
+                3],
             "partial_scroll_timeout": 1000000,
             "tap_hold_threshold": 200000,
             "gpio_debounce_time_ms": 5,
