@@ -3,3 +3,4 @@ firmware-bluetooth/build
 firmware/build
 .vscode/settings.json
 build
+firmware/.DS_Store
