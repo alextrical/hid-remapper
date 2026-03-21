@@ -124,7 +124,7 @@ char const* string_desc_arr[] = {
 
 //required for SpaceMouse driver
     "3Dconnexion",                 // 1: Manufacturer
-    "SpaceMouse Pro",              // 2: Product
+    "SpaceMouse Enterprise",       // 2: Product
 };
 
 // Invoked when received GET DEVICE DESCRIPTOR

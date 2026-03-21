@@ -10068,7 +10068,7 @@ const examples = [
         }
     },
     {
-        'description': 'SpacePilot to SpaceMouse Pro',
+        'description': 'SpacePilot to SpaceMouse Enterprise',
         'config': {
             "version": 15,
             "unmapped_passthrough_layers": [],

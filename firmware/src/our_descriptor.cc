@@ -901,7 +901,7 @@ const our_descriptor_def_t our_descriptors[] = {
         .descriptor = our_report_descriptor_spacemouse,
         .descriptor_length = sizeof(our_report_descriptor_spacemouse),
         .vid = 0x046D,
-        .pid = 0xC62B,
+        .pid = 0xC633,
         .handle_received_report = do_handle_received_report,
         .needs_to_be_sent = needs_to_be_sent_spacemouse,
     },

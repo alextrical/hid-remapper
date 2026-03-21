@@ -660,7 +660,7 @@ const uint8_t spacemouse_compact_descriptor[] = {
     0xC0,              // End Collection
 };
 
-const uint8_t spacemouse_pro_descriptor[] = {
+const uint8_t spacemouse_enterprise_descriptor[] = {
     0x05, 0x01,        // Usage Page (Generic Desktop Ctrls)
     0x09, 0x08,        // Usage (Multi-axis Controller)
     0xA1, 0x01,        // Collection (Application)
@@ -1171,8 +1171,8 @@ void apply_quirks(uint16_t vendor_id, uint16_t product_id, std::unordered_map<ui
              len == sizeof(spacemouse_compact_descriptor) &&
              !memcmp(report_descriptor, spacemouse_compact_descriptor, len)) ||
             (product_id == PRODUCT_ID_3DCONNEXION_SPACEMOUSE_PRO &&
-                len == sizeof(spacemouse_pro_descriptor) &&
-                !memcmp(report_descriptor, spacemouse_pro_descriptor, len)))) {
+                len == sizeof(spacemouse_enterprise_descriptor) &&
+                !memcmp(report_descriptor, spacemouse_enterprise_descriptor, len)))) {
         usage_map[1][0x00010030].is_relative = false;
         usage_map[1][0x00010031].is_relative = false;
         usage_map[1][0x00010032].is_relative = false;
