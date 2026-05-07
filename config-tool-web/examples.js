@@ -10399,6 +10399,204 @@ const examples = [
             ],
             "quirks": []
         }
+    },
+    {
+        'description': 'Mouse (trackball) to SpaceMouse Pro',
+        'config': {
+            "version": 18,
+    "unmapped_passthrough_layers": [],
+    "partial_scroll_timeout": 1000000,
+    "tap_hold_threshold": 200000,
+    "gpio_debounce_time_ms": 5,
+    "interval_override": 1,
+    "our_descriptor_number": 6,
+    "ignore_auth_dev_inputs": false,
+    "macro_entry_duration": 1,
+    "gpio_output_mode": 0,
+    "input_labels": 0,
+    "normalize_gamepad_inputs": false,
+    "mappings": [
+        {
+            "target_usage": "0x00010030",
+            "source_usage": "0xfff30001",
+            "scaling": 1000,
+            "layers": [
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x00010031",
+            "source_usage": "0xfff30002",
+            "scaling": 1000,
+            "layers": [
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x00010032",
+            "source_usage": "0xfff30003",
+            "scaling": -1000,
+            "layers": [
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x00010035",
+            "source_usage": "0xfff30001",
+            "scaling": 1000,
+            "layers": [
+                0
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x00010033",
+            "source_usage": "0xfff30002",
+            "scaling": 1000,
+            "layers": [
+                0
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x00010034",
+            "source_usage": "0xfff30003",
+            "scaling": -1000,
+            "layers": [
+                0
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0xfff10001",
+            "source_usage": "0x00090001",
+            "scaling": 1000,
+            "layers": [
+                0,
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x0009000d",
+            "source_usage": "0x00090002",
+            "scaling": 1000,
+            "layers": [
+                0,
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x0009000e",
+            "source_usage": "0x00090005",
+            "scaling": 1000,
+            "layers": [
+                0,
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        },
+        {
+            "target_usage": "0x0009000f",
+            "source_usage": "0x00090004",
+            "scaling": 1000,
+            "layers": [
+                0,
+                1
+            ],
+            "sticky": false,
+            "tap": false,
+            "hold": false,
+            "source_port": 0,
+            "target_port": 0
+        }
+    ],
+    "macros": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "expressions": [
+        "0x00010030 input_state eol 256000 mul eol 1000 recall sub eol 100 mul eol 1000 recall add eol dup eol 1000 store",
+        "0x00010031 input_state eol 256000 mul eol 2000 recall sub eol 100 mul eol 2000 recall add eol dup eol 2000 store eol eol eol",
+        "0x00010038 input_state eol 128000 mul eol 256000 mul eol 3000 recall sub eol 100 mul eol 3000 recall add eol dup eol 3000 store",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "quirks": []
+        }
     }
 ];
 
